@@ -1,0 +1,34 @@
+.company {
+  background-color: #f4f6f6;
+  width: 100%;
+  height: 240px;
+
+  display: flex;
+  align-items: center;
+}
+.company_content h4 {
+  font-family: var(--font-poppins);
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 0.14em;
+
+  color: #031745;
+}
+.company_logo {
+  margin-top: 25px;
+}
+.company_logo img {
+  width: 120px;
+  height: 50px;
+  margin: 1rem 2rem;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+.company_logo img:hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
