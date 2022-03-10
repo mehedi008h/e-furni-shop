@@ -1,0 +1,44 @@
+.footer {
+  background-color: #244d4d;
+  display: flex;
+  font-family: var(--font-poppins);
+}
+.footer_header {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 60px;
+  color: #ffffff;
+}
+.footer_btn button {
+  border: none;
+  padding: 10px 15px;
+  margin: 0 0.5rem;
+  border-radius: 20px;
+  font-weight: 500;
+}
+.footer_btn button:nth-child(1) {
+  color: #244d4d;
+  background-color: #ffffff;
+}
+.footer_btn button:nth-child(2) {
+  color: #fcfbff;
+  background-color: #3a5f5f;
+}
+
+.company_info p {
+  width: 230px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 27px;
+  color: #eeeeee;
+}
+
+.company_details {
+  color: #eeeeee;
+}
+
+.icon {
+  margin-top: 10px;
+}

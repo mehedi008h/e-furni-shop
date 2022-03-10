@@ -1,0 +1,11 @@
+[
+  {
+    "name": "Hand Base Lamp",
+    "price": {
+      "regular": "646",
+      "discount": "456"
+    },
+    "image": "rt",
+    "tags": ["light", "all"]
+  }
+]
