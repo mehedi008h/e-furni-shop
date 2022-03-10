@@ -3,13 +3,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(255, 255, 255, 0.25);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-
+  background-color: white;
+  position: fixed;
+  display: flex;
+  z-index: 999;
   padding: 1rem 2rem;
+}
+.app__flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .app__navbar-logo {
@@ -96,6 +99,10 @@
 
 .app__navbar-smallscreen_links {
   list-style: none;
+}
+.sm_link {
+  text-decoration: none;
+  color: white;
 }
 
 .app__navbar-smallscreen_links li {

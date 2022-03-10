@@ -2,10 +2,55 @@
   {
     "name": "Hand Base Lamp",
     "price": {
-      "regular": "646",
-      "discount": "456"
+      "regular": "12",
+      "discount": "11"
     },
-    "image": "rt",
-    "tags": ["light", "all"]
+    "image": "https://res.cloudinary.com/mehedi08h/image/upload/v1646914569/Furnitair/product-1_qtkl0m.webp",
+    "tags": ["Light", "all"]
+  },
+  {
+    "name": "Two Seat Sofa",
+    "price": {
+      "regular": "88",
+      "discount": "75"
+    },
+    "image": "https://res.cloudinary.com/mehedi08h/image/upload/v1646914575/Furnitair/sofa-png-image_s9sctl.png",
+    "tags": ["Sofa", "all"]
+  },
+  {
+    "name": "One Seat Sofa",
+    "price": {
+      "regular": "65",
+      "discount": "57"
+    },
+    "image": "https://res.cloudinary.com/mehedi08h/image/upload/v1646914573/Furnitair/round-chair_p9zsad.png",
+    "tags": ["Sofa", "all"]
+  },
+  {
+    "name": "Stylish Chair",
+    "price": {
+      "regular": "65",
+      "discount": "57"
+    },
+    "image": "https://res.cloudinary.com/mehedi08h/image/upload/v1646914572/Furnitair/single-comfort-sofa-chair_na8b3i.png",
+    "tags": ["Chair", "all"]
+  },
+  {
+    "name": "Chair",
+    "price": {
+      "regular": "65",
+      "discount": "57"
+    },
+    "image": "https://res.cloudinary.com/mehedi08h/image/upload/v1646914568/Furnitair/best-selling-3_tt5lgx.png",
+    "tags": ["Chair", "all"]
+  },
+  {
+    "name": "Lamp Tool",
+    "price": {
+      "regular": "65",
+      "discount": "57"
+    },
+    "image": "https://res.cloudinary.com/mehedi08h/image/upload/v1646914569/Furnitair/product-1_qtkl0m.webp",
+    "tags": ["Light", "all"]
   }
 ]

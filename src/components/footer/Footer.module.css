@@ -3,6 +3,10 @@
   display: flex;
   font-family: var(--font-poppins);
 }
+.footer_head {
+  display: flex;
+  justify-content: space-between;
+}
 .footer_header {
   font-style: normal;
   font-weight: 400;
@@ -41,4 +45,20 @@
 
 .icon {
   margin-top: 10px;
+}
+
+@media screen and (max-width: 650px) {
+  .footer_head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .footer_header {
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+  }
+  .footer_btn button {
+    margin-top: 10px;
+  }
 }

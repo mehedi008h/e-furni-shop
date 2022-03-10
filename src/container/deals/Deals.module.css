@@ -55,3 +55,18 @@
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   border-radius: 10px;
 }
+
+@media screen and (max-width: 650px) {
+  .deals_text h4 {
+    font-size: 30px;
+    line-height: 40px;
+    color: #244d4d;
+    text-align: center;
+  }
+  .deals_text p {
+    margin: auto;
+  }
+  .deals_item p {
+    margin: auto;
+  }
+}

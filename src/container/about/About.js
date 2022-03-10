@@ -4,7 +4,7 @@ import styles from "./About.module.css";
 
 const About = () => {
   return (
-    <div className={styles.about}>
+    <div className={styles.about} id="about">
       <div className="container">
         <div className="d-flex align-items-center justify-content-between">
           <div className={styles.about_text}>
@@ -62,13 +62,7 @@ const About = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-6">
-              {/* <div className="d-flex align-items-center">
-                <img style={{ margin: "5px" }} src={images.furi_1} alt="" />
-                <img style={{ margin: "5px" }} src={images.furi_2} alt="" />
-                <img style={{ margin: "5px" }} src={images.furi_4} alt="" />
-                <img style={{ margin: "5px" }} src={images.furi_3} alt="" />
-              </div> */}
+            <div className={`col-md-6 ${styles.image_sm}`}>
               <div className="row">
                 <div className="col-md-6 mt-4">
                   <div className="d-flex align-items-center flex-column">

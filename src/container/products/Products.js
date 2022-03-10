@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "./Products.module.css";
 import { motion } from "framer-motion";
+import Product from "./Product";
 
 const Products = () => {
   const [product, setProduct] = useState([]);
@@ -40,30 +41,30 @@ const Products = () => {
           <button>See All</button>
         </div>
         <div className={styles.product_filter}>
-          {["All", "UI/UX", "Web App", "Mobile App", "light"].map(
-            (item, index) => (
-              <div
-                key={index}
-                onClick={() => handleWorkFilter(item)}
-                className={`${styles.product_filter_item} ${
-                  activeFilter === item ? `${styles.item_active}` : ""
-                } `}
-              >
-                {item}
-              </div>
-            )
-          )}
+          {["All", "Sofa", "Chair", "Light"].map((item, index) => (
+            <div
+              key={index}
+              onClick={() => handleWorkFilter(item)}
+              className={`${styles.product_filter_item} ${
+                activeFilter === item ? `${styles.item_active}` : ""
+              } `}
+            >
+              {item}
+            </div>
+          ))}
         </div>
         <motion.div
           animate={animateCard}
           transition={{ duration: 0.5, delayChildren: 0.5 }}
           className="app__work-portfolio"
         >
-          {filterProduct.map((product, index) => (
-            <div key={index}>
-              <h4>{product.name}</h4>
-            </div>
-          ))}
+          <div className="row g-3">
+            {filterProduct.map((product, index) => (
+              <div className="col-md-4" key={index}>
+                <Product product={product} />
+              </div>
+            ))}
+          </div>
         </motion.div>
       </div>
     </div>

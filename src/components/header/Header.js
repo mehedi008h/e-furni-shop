@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdOutlineRestaurantMenu } from "react-icons/md";
-import { motion } from "framer-motion";
+import { HiShoppingCart } from "react-icons/hi";
 
 import "./Header.css";
 
@@ -24,13 +24,13 @@ const Header = () => {
           </a>
         </li>
         <li className="p__opensans">
-          <a className="nav_link" href="#menu">
-            Menu
+          <a className="nav_link" href="#products">
+            Products
           </a>
         </li>
         <li className="p__opensans">
-          <a className="nav_link" href="#awards">
-            Awards
+          <a className="nav_link" href="#features">
+            Features
           </a>
         </li>
         <li className="p__opensans">
@@ -41,21 +41,21 @@ const Header = () => {
       </ul>
       <div className="app__navbar-login">
         <a href="#login" className="p__opensans">
-          Log In / Registration
+          <HiShoppingCart size={25} />
         </a>
         <div />
         <a href="/" className="p__opensans">
-          Book Table
+          Log In / Registration
         </a>
       </div>
       <div className="app__navbar-smallscreen">
         <GiHamburgerMenu
-          color="#fff"
+          color="#244d4d"
           fontSize={27}
           onClick={() => setToggleMenu(true)}
         />
         {toggleMenu && (
-          <div className="app__navbar-smallscreen_overlay flex__center slide-bottom">
+          <div className="app__navbar-smallscreen_overlay d-flex align-items-center justify-content-center slide-bottom">
             <MdOutlineRestaurantMenu
               fontSize={27}
               className="overlay__close"
@@ -63,27 +63,47 @@ const Header = () => {
             />
             <ul className="app__navbar-smallscreen_links">
               <li>
-                <a href="#home" onClick={() => setToggleMenu(false)}>
+                <a
+                  href="#home"
+                  className="sm_link"
+                  onClick={() => setToggleMenu(false)}
+                >
                   Home
                 </a>
               </li>
               <li>
-                <a href="#about" onClick={() => setToggleMenu(false)}>
+                <a
+                  href="#about"
+                  className="sm_link"
+                  onClick={() => setToggleMenu(false)}
+                >
                   About
                 </a>
               </li>
               <li>
-                <a href="#menu" onClick={() => setToggleMenu(false)}>
-                  Menu
+                <a
+                  href="#products"
+                  className="sm_link"
+                  onClick={() => setToggleMenu(false)}
+                >
+                  Products
                 </a>
               </li>
               <li>
-                <a href="#awards" onClick={() => setToggleMenu(false)}>
-                  Awards
+                <a
+                  href="#features"
+                  className="sm_link"
+                  onClick={() => setToggleMenu(false)}
+                >
+                  Features
                 </a>
               </li>
               <li>
-                <a href="#contact" onClick={() => setToggleMenu(false)}>
+                <a
+                  href="#contact"
+                  className="sm_link"
+                  onClick={() => setToggleMenu(false)}
+                >
                   Contact
                 </a>
               </li>

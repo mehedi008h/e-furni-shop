@@ -1,12 +1,27 @@
-import React from "react";
-import images from "../../constants/images";
+import React, { useEffect, useState } from "react";
 import styles from "./Client.module.css";
 import { BsBookmarkStar } from "react-icons/bs";
+import { AiOutlineArrowRight, AiOutlineArrowLeft } from "react-icons/ai";
 
 const Client = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [testimonials, setTestimonials] = useState([]);
+
+  const handleClick = (index) => {
+    setCurrentIndex(index);
+  };
+
+  // load data
+  useEffect(() => {
+    fetch("./client.json")
+      .then((res) => res.json())
+      .then((data) => {
+        setTestimonials(data);
+      });
+  }, []);
   return (
     <div className={styles.client}>
-      <div className={`container ${styles.container}`}>
+      <div className={`container mt-5 mb-5 ${styles.container}`}>
         <div className={styles.effect_1}>
           <BsBookmarkStar size={25} />
         </div>
@@ -20,40 +35,57 @@ const Client = () => {
             anywhere else. Whether you’re.
           </p>
         </div>
-        <div className="mt-5">
-          <div className="row">
-            <div className="col-md-8 col-offset-md-4 mx-auto">
-              <div className="row g-3">
-                <div className="col-md-6">
-                  <div className="me-auto">
+        {testimonials.length && (
+          <div className="mt-5">
+            <div className="row">
+              <div className="col-md-8 col-offset-md-4 mx-auto">
+                <div className={styles.feedback}>
+                  <div className="text-center">
                     <img
-                      style={{
-                        height: "300px",
-                        width: "250px",
-                        objectFit: "cover",
-                      }}
-                      src={images.furi_2}
+                      className={styles.feedback_image}
+                      src={testimonials[currentIndex].image}
                       alt=""
                     />
                   </div>
-                </div>
-                <div className="col-md-6">
-                  <div className={`${styles.review} ms-auto`}>
+                  <div className={`${styles.review} ms-3`}>
                     <h5>Furni.shop</h5>
-                    <h4>
-                      File storage made easy – including powerful features you
-                      won’t find anywhere else. Whether you’re.
-                    </h4>
+                    <h4>{testimonials[currentIndex].feedback}</h4>
                     <div className={`${styles.client_info} mt-4`}>
-                      <h5>Mehedi Hasan</h5>
-                      <p>Student</p>
+                      <h5>{testimonials[currentIndex].name}</h5>
+                      <p>{testimonials[currentIndex].work}</p>
                     </div>
                   </div>
                 </div>
               </div>
+              <div className="d-flex align-items-center justify-content-center">
+                <div
+                  className={styles.arrow}
+                  onClick={() =>
+                    handleClick(
+                      currentIndex === 0
+                        ? testimonials.length - 1
+                        : currentIndex - 1
+                    )
+                  }
+                >
+                  <AiOutlineArrowLeft size={20} />
+                </div>
+                <div
+                  className={styles.arrow}
+                  onClick={() =>
+                    handleClick(
+                      currentIndex === testimonials.length - 1
+                        ? 0
+                        : currentIndex + 1
+                    )
+                  }
+                >
+                  <AiOutlineArrowRight size={20} />
+                </div>
+              </div>
             </div>
           </div>
-        </div>
+        )}
       </div>
     </div>
   );

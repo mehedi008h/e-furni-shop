@@ -11,7 +11,7 @@
 }
 .effect_1 {
   position: absolute;
-  top: 10%;
+  top: 13%;
   left: -30px;
   height: 100px;
   width: 100px;
@@ -76,3 +76,144 @@
 
   color: #5f5f64;
 }
+
+@media screen and (min-width: 2000px) {
+}
+
+@media screen and (max-width: 850px) {
+  .banner {
+    align-items: stretch;
+  }
+  .banner_text {
+    top: 60%;
+    left: 0%;
+    width: 100%;
+    height: 50%;
+    padding: 2rem;
+  }
+  .banner_img {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .banner_img img {
+    width: 100%;
+  }
+  .effect_1 {
+    top: 48%;
+  }
+  .effect_2 {
+    display: none;
+  }
+  .banner_text h1 {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 50px;
+    letter-spacing: -0.03em;
+    color: #244d4d;
+    text-align: center;
+  }
+  .banner_text p {
+    font-family: var(--font-poppins);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+
+    letter-spacing: 0.01em;
+
+    color: #5f5f64;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .banner {
+    align-items: stretch;
+  }
+  .banner_text {
+    top: 44%;
+    left: 0%;
+    width: 100%;
+    height: 50%;
+    padding: 2rem;
+  }
+  .banner_img {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .banner_img img {
+    width: 100%;
+  }
+  .effect_1 {
+    top: 48%;
+  }
+  .effect_2 {
+    display: none;
+  }
+  .banner_text h1 {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 50px;
+    letter-spacing: -0.03em;
+    color: #244d4d;
+    text-align: center;
+  }
+  .banner_text p {
+    font-family: var(--font-poppins);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+
+    letter-spacing: 0.01em;
+
+    color: #5f5f64;
+  }
+}
+
+/* @media screen and (max-width: 350px) {
+  .banner {
+    align-items: stretch;
+  }
+  .banner_text {
+    top: 40%;
+    left: 0%;
+    width: 100%;
+    height: 10%;
+    padding: 2rem;
+  }
+  .banner_img {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .banner_img img {
+    width: 100%;
+  }
+  .effect_1 {
+    top: 38%;
+  }
+  .effect_2 {
+    display: none;
+  }
+  .banner_text h1 {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 50px;
+    letter-spacing: -0.03em;
+    color: #244d4d;
+    text-align: center;
+  }
+  .banner_text p {
+    font-family: var(--font-poppins);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+
+    letter-spacing: 0.01em;
+
+    color: #5f5f64;
+  }
+} */

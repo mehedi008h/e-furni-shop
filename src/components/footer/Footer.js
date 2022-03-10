@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <div className={styles.footer}>
       <div className="container mt-5 mb-5">
-        <div className="d-flex justify-content-between">
+        <div className={styles.footer_head}>
           <h1 className={styles.footer_header}>
             Start your business today for <br />
             $0+ state fees.
@@ -22,10 +22,10 @@ const Footer = () => {
           </div>
         </div>
         <hr className="mt-5 mb-5 text-white" />
-        <div className="row">
+        <div className="row g-3">
           <div className="col-md-4">
             <div className={styles.company_info}>
-              <h4 className="text-white">firni.shop</h4>
+              <h4 className="text-white">furni.shop</h4>
               <p className="mt-4">
                 Optix seamlessly connects your members with the community,
                 resources.

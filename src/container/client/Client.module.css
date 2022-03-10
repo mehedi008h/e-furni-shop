@@ -34,6 +34,17 @@
   color: #5f5f64;
   margin: 25px auto;
 }
+.feedback {
+  display: flex;
+  justify-content: center;
+}
+.feedback_image {
+  height: 300px;
+  width: 250px;
+}
+.review {
+  width: 50%;
+}
 .review h4 {
   font-family: var(--font-poppins);
   font-style: italic;
@@ -49,6 +60,21 @@
   font-size: 20px;
   line-height: 30px;
   color: #244d4d;
+}
+
+.arrow {
+  border: 2px solid #244d4d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  border-radius: 50%;
+  margin: 0.5rem;
+  transition: all 0.4s ease-in-out;
+}
+.arrow:hover {
+  background-color: #244d4d;
+  color: #f4f6f6;
 }
 
 .effect_1 {
@@ -89,4 +115,38 @@
   line-height: 10px;
   letter-spacing: 0.01em;
   color: #5f5f64;
+}
+
+@media screen and (max-width: 650px) {
+  .client_header h1 {
+    font-size: 30px;
+    line-height: 50px;
+  }
+  .client_header p {
+    font-size: 16px;
+    width: 100%;
+    line-height: 30px;
+    text-align: center;
+  }
+  .feedback {
+    flex-direction: column;
+  }
+  .feedback_image {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+  }
+  .review {
+    width: 100%;
+    margin: 15px auto;
+  }
+  .review h4 {
+    font-size: 16px;
+    line-height: 25px;
+    width: 100%;
+  }
+  .review h5 {
+    font-size: 14px;
+    line-height: 15px;
+  }
 }

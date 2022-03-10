@@ -5,8 +5,8 @@ import { BsFillArrowDownCircleFill } from "react-icons/bs";
 
 const Banner = () => {
   return (
-    <div className={styles.banner}>
-      <div className="container">
+    <div className={`${styles.banner}`} id="home">
+      <div className="container mt-5">
         <div className={styles.effect_1}></div>
         <div className={styles.effect_2}>
           <BsFillArrowDownCircleFill size={30} />

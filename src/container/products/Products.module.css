@@ -52,3 +52,36 @@
   background-color: #244d4d;
   color: #fff;
 }
+
+.product_item {
+  font-family: var(--font-poppins);
+  background: #f4f6f6;
+  padding: 1.5rem;
+  border-radius: 15px;
+  text-align: center;
+}
+.product_price h5 {
+  margin: 0.5rem;
+}
+.product_price h5:nth-child(1) {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 24px;
+  color: #3d3d3f;
+}
+.product_price h5:nth-child(2) {
+  text-decoration-line: line-through;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  color: #a9a7a6;
+}
+
+@media screen and (max-width: 650px) {
+  .product_header h1 {
+    font-size: 30px;
+    line-height: 50px;
+  }
+}
