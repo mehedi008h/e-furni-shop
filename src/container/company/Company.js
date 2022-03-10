@@ -1,6 +1,10 @@
 import React from "react";
 import styles from "./Company.module.css";
-import images from "../../constants/images";
+import adidas from "../../assets/adidas.png";
+import amazon from "../../assets/amazon.png";
+import asus from "../../assets/asus.png";
+import nb from "../../assets/nb.png";
+import spotify from "../../assets/spotify.png";
 
 const Company = () => {
   return (
@@ -9,11 +13,11 @@ const Company = () => {
         <div className={styles.company_content}>
           <h4>Trusted by over 1k company</h4>
           <div className={styles.company_logo}>
-            <img src={images.adidas} alt="" />
-            <img src={images.amazon} alt="" />
-            <img src={images.asus} alt="" />
-            <img src={images.nb} alt="" />
-            <img src={images.spotify} alt="" />
+            <img src={adidas} alt="" />
+            <img src={amazon} alt="" />
+            <img src={asus} alt="" />
+            <img src={nb} alt="" />
+            <img src={spotify} alt="" />
           </div>
         </div>
       </div>

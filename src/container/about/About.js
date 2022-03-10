@@ -1,5 +1,8 @@
 import React from "react";
-import images from "../../constants/images";
+import furi_1 from "../../assets/furni 1.jpg";
+import furi_2 from "../../assets/furni 2.jpg";
+import furi_3 from "../../assets/furni 3.jpg";
+import furi_4 from "../../assets/furni 4.jpg";
 import styles from "./About.module.css";
 
 const About = () => {
@@ -66,14 +69,14 @@ const About = () => {
               <div className="row">
                 <div className="col-md-6 mt-4">
                   <div className="d-flex align-items-center flex-column">
-                    <img style={{ margin: "5px" }} src={images.furi_1} alt="" />
-                    <img style={{ margin: "5px" }} src={images.furi_2} alt="" />
+                    <img style={{ margin: "5px" }} src={furi_1} alt="" />
+                    <img style={{ margin: "5px" }} src={furi_2} alt="" />
                   </div>
                 </div>
                 <div className="col-md-6">
                   <div className="d-flex align-items-center flex-column">
-                    <img style={{ margin: "5px" }} src={images.furi_4} alt="" />
-                    <img style={{ margin: "5px" }} src={images.furi_3} alt="" />
+                    <img style={{ margin: "5px" }} src={furi_4} alt="" />
+                    <img style={{ margin: "5px" }} src={furi_3} alt="" />
                   </div>
                 </div>
               </div>
